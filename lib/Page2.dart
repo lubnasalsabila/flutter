@@ -21,7 +21,7 @@ class Page2 extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Container(
-                  margin: EdgeInsets.fromLTRB(0, 40.0, 0, 40.0), // Margin atas 30px
+                  margin: EdgeInsets.fromLTRB(0, 40.0, 0, 40.0),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
@@ -29,11 +29,11 @@ class Page2 extends StatelessWidget {
                         radius: 100.0,
                         backgroundImage: AssetImage('images/f.jpg'),
                       ),
-                      SizedBox(height: 10), // Jarak antara CircleAvatar dan Text
+                      SizedBox(height: 10),
                       Text(
                         "Lubna Salsabila",
                         textAlign: TextAlign.center,
-                        style: TextStyle(fontSize: 25), // Anda bisa menambahkan warna jika perlu
+                        style: TextStyle(fontSize: 25, color: Colors.black),
                       ),
                     ],
                   ),
@@ -50,12 +50,12 @@ class Page2 extends StatelessWidget {
                       gradient: LinearGradient(
                         colors: [
                           Colors.white,
-                          Color(0xFFE0B0FF), // Ungu muda
+                          Color(0xFFE0B0FF),
                         ],
                         begin: Alignment.topLeft,
                         end: Alignment.bottomRight,
                       ),
-                      borderRadius: BorderRadius.circular(15.0), // Pastikan borderRadius sama
+                      borderRadius: BorderRadius.circular(15.0),
                     ),
                     child: Padding(
                       padding: const EdgeInsets.all(30.0),
@@ -65,35 +65,19 @@ class Page2 extends StatelessWidget {
                           Text(
                             "About",
                             textAlign: TextAlign.start,
-                            style: TextStyle(fontSize: 20),
+                            style: TextStyle(fontSize: 20, color: Colors.black),
                           ),
                           SizedBox(height: 10),
                           Text(
                             "Halo semuanya, saya Siti Lubna Salsabila Muslimah dari rombel PPLG XII-2 rayon Cisarua 4, saya adalah anak ke-3 dari 4 bersaudara tanggal lahir saya 18 Juli 2007 dan saya lahir di Bogor, salam kenal semuanya. saya sekarang lagi belajar flutter di ruangan 322 sama ka Alvin",
                             textAlign: TextAlign.start,
-                            style: TextStyle(fontSize: 15),
+                            style: TextStyle(fontSize: 15, color: Colors.black),
                           ),
                         ],
                       ),
                     ),
                   ),
-                ),  
-
-
-                Card(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10.0), // Menggunakan shape untuk border radius
-                    ),
-                    color: Color(0xFFAD49E1), // Margin dari Card
-                    child: Padding(
-                      padding: EdgeInsets.all(10.0), // Padding di dalam Card
-                      child: Column(
-                        children: <Widget>[
-                          // Tambahkan child di sini
-                        ],
-                      ),
-                    ),
-                  ),
+                ),
 
                 // Second Card: History
                 Card(
@@ -106,12 +90,12 @@ class Page2 extends StatelessWidget {
                       gradient: LinearGradient(
                         colors: [
                           Colors.white,
-                          Color(0xFFE0B0FF), // Ungu muda
+                          Color(0xFFE0B0FF),
                         ],
                         begin: Alignment.topLeft,
                         end: Alignment.bottomRight,
                       ),
-                      borderRadius: BorderRadius.circular(15.0), // Pastikan borderRadius sama
+                      borderRadius: BorderRadius.circular(15.0),
                     ),
                     child: Padding(
                       padding: const EdgeInsets.all(30.0),
@@ -121,19 +105,19 @@ class Page2 extends StatelessWidget {
                           Text(
                             "History",
                             textAlign: TextAlign.start,
-                            style: TextStyle(fontSize: 20),
+                            style: TextStyle(fontSize: 20, color: Colors.black),
                           ),
                           SizedBox(height: 10),
                           Text(
                             "Halo semuanya, saya Siti Lubna Salsabila Muslimah dari rombel PPLG XII-2 rayon Cisarua 4, saya adalah anak ke-3 dari 4 bersaudara tanggal lahir saya 18 Juli 2007 dan saya lahir di Bogor, salam kenal semuanya.",
                             textAlign: TextAlign.start,
-                            style: TextStyle(fontSize: 15),
+                            style: TextStyle(fontSize: 15, color: Colors.black),
                           ),
                           SizedBox(height: 10),
                           Text(
                             "Nis saya 12209428, zodiak saya adalah cancer, mbti saya adalah INFP",
                             textAlign: TextAlign.start,
-                            style: TextStyle(fontSize: 15),
+                            style: TextStyle(fontSize: 15, color: Colors.black),
                           ),
                         ],
                       ),
@@ -141,25 +125,9 @@ class Page2 extends StatelessWidget {
                   ),
                 ),
 
-
-                Card(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10.0), // Menggunakan shape untuk border radius
-                    ),
-                    color: Color(0xFFAD49E1),// Margin dari Card
-                    child: Padding(
-                      padding: EdgeInsets.all(10.0), // Padding di dalam Card
-                      child: Column(
-                        children: <Widget>[
-                          // Tambahkan child di sini
-                        ],
-                      ),
-                    ),
-                  ),
-
                 // Third Card: Skill
-               Container(
-                  width: MediaQuery.of(context).size.width * 10, // Ubah 10 menjadi 0.9 untuk lebar yang wajar
+                Container(
+                  width: MediaQuery.of(context).size.width * 10,
                   child: Card(
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(15.0),
@@ -170,12 +138,12 @@ class Page2 extends StatelessWidget {
                         gradient: LinearGradient(
                           colors: [
                             Colors.white,
-                            Color(0xFFE0B0FF), // Ungu muda
+                            Color(0xFFE0B0FF),
                           ],
                           begin: Alignment.topLeft,
                           end: Alignment.bottomRight,
                         ),
-                        borderRadius: BorderRadius.circular(15.0), // Pastikan borderRadius sama
+                        borderRadius: BorderRadius.circular(15.0),
                       ),
                       child: Padding(
                         padding: const EdgeInsets.all(30.0),
@@ -185,23 +153,23 @@ class Page2 extends StatelessWidget {
                             Text(
                               "Skill",
                               textAlign: TextAlign.start,
-                              style: TextStyle(fontSize: 20),
+                              style: TextStyle(fontSize: 20, color: Colors.black),
                             ),
                             SizedBox(height: 10),
                             Text(
                               "HTML",
                               textAlign: TextAlign.start,
-                              style: TextStyle(fontSize: 17),
+                              style: TextStyle(fontSize: 17, color: Colors.black),
                             ),
                             Text(
                               "CSS",
                               textAlign: TextAlign.start,
-                              style: TextStyle(fontSize: 17),
+                              style: TextStyle(fontSize: 17, color: Colors.black),
                             ),
                             Text(
                               "LARAVEL",
                               textAlign: TextAlign.start,
-                              style: TextStyle(fontSize: 17),
+                              style: TextStyle(fontSize: 17, color: Colors.black),
                             ),
                           ],
                         ),
